@@ -54,25 +54,9 @@ Administrators can customize the bot's behavior, including chat goals, rewards, 
 
 4. Users can use their coins to purchase premium memberships and other perks by using the `!buy` command.
 
-## Contributing
+## Contributer's is Always welcome 
+- if anyone want to collaborate feel free to contact me or message me on linkedin    :)  <br>
+## Regards & Welcome <br>
 
-We welcome contributions from the community! If you have suggestions, bug reports, or would like to contribute code, please see our [Contributing Guidelines](CONTRIBUTING.md).
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Acknowledgments
-
-We would like to thank the Discord community for their support and feedback in the development of this bot.
-
-For any inquiries or issues, please contact us at [support@levelupbot.com](mailto:support@levelupbot.com).
-
-Enjoy using the Leveling-Up-Bot and happy chatting!
-
-![Bot Banner](bot_banner.png)
-
----
-
-*Note: Replace "bot_logo.png" and "bot_banner.png" with actual images if you have any.*
+[Durgesh Tiwari](https://www.linkedin.com/in/durgesh98/)
 
