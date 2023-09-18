@@ -1,6 +1,6 @@
 # Leveling-Up-Bot
 
-![Bot Logo](bot_logo.png)
+![P1](img/bot.png)
 
 ## Overview
 
