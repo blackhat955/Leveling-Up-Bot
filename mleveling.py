@@ -376,7 +376,7 @@ async def verify_level_up(ctx, xp, stats):
     xp -= ((20 * ((lvl - 1) ** 2)) + (20 * (lvl - 1)))
     if xp == 0:
         xp = stats['xp'] + 1
-        leveling.update_one({"_id": message.author.id}, {"$set": {"xp": xp}})
+        leveling.update_one({"_id": ctx.author.id}, {"$set": {"xp": xp}})
         chan = ctx.author.guild.get_channel(874705596597813288)
         embed = discord.Embed(
             title=f"{ctx.author.mention} Leveled up!",
@@ -384,7 +384,7 @@ async def verify_level_up(ctx, xp, stats):
             color=discord.Color.random(),
             timestamp=datetime.datetime.utcnow()
         )
-        await ctx.send(f"Congratulations {message.author.mention} You Leveled up to level **{lvl}**")
+        await ctx.send(f"Congratulations {ctx.author.mention} You Leveled up to level **{lvl}**")
         for i in range(len(level_role)):
             if lvl == levelnum[i]:
                 await ctx.author.add_roles(discord.utils.get(ctx.author.guild.roles, name=level_role[i]))
@@ -400,7 +400,7 @@ async def verify_level_up(ctx, xp, stats):
     elif xp == 1:
         xp -= 1
         xp = stats['xp'] + 1
-        leveling.update_one({"_id": message.author.id}, {"$set": {"xp": xp}})
+        leveling.update_one({"_id": ctx.author.id}, {"$set": {"xp": xp}})
         chan = ctx.author.guild.get_channel(874705596597813288)
         embed = discord.Embed(
             title=f"{ctx.author.mention} Leveled up!",
@@ -408,7 +408,7 @@ async def verify_level_up(ctx, xp, stats):
             color=discord.Color.random(),
             timestamp=datetime.datetime.utcnow()
         )
-        await ctx.send(f"Congratulations {message.author.mention} You Leveled up to level **{lvl}**")
+        await ctx.send(f"Congratulations {ctx.author.mention} You Leveled up to level **{lvl}**")
         for i in range(len(level_role)):
             if lvl == levelnum[i]:
                 await ctx.author.add_roles(discord.utils.get(ctx.author.guild.roles, name=level_role[i]))
